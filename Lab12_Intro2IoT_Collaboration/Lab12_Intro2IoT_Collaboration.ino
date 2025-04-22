@@ -65,10 +65,15 @@ bool isButtonActivated() {
   if (state == LOW) {
     Serial.print("Button:ON");
     // Button not pressed
-    return true;
-  } else {
-    // Button pressed
     Serial.print("Button:OFF");
+    return true;
+  } else  {
+    // Button pressed
+<<<<<<< Updated upstream
+    Serial.print("Button:OFF");
+=======
+    Serial.print("Button:ON");
+>>>>>>> Stashed changes
     return false;
   }
 
